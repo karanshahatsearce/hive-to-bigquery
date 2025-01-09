@@ -9,7 +9,7 @@ import findspark
 import logging
 
 
-findspark.init("/Users/karanshah/usr/lib/spark")
+findspark.init("/usr/lib/spark")
 from pyhive import hive
 from google.cloud import bigquery, storage
 import json
