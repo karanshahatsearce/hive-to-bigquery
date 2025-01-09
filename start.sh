@@ -1,6 +1,6 @@
 # script1.sh
 #!/bin/bash
-BUCKET_NAME="demo-gcs-bq"
+BUCKET_NAME="demo-gcs-bq-test"
 
 # Check if the bucket exists
 if gsutil ls "gs://${BUCKET_NAME}" >/dev/null 2>&1; then
@@ -28,11 +28,11 @@ fi
 # Set another variable
 export from_path="hdfs://demo-hive-to-b2-m/user/hive/warehouse/hivedemo.db/"
 echo "from_path ==>",$from_path
-export to_path="gs://demo-gcs-bq"
+export to_path="gs://${BUCKET_NAME}"
 echo "to_path ==>",$to_path
 export project="applied-ai-practice00"
 echo "==> project-Id",$project
-export bucket_name="demo-gcs-bq"
+export bucket_name={BUCKET_NAME}
 echo "==>bucket_name",$bucket_name
 export table_id="applied-ai-practice00.hive_to_bigquery."
 echo "==>table_id",$table_id
