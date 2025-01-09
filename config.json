@@ -1,0 +1,8 @@
+{
+"details":{
+           "server":"localhost",
+           "port":10000,
+           "database":"hivedemo",
+           "user":"hive"
+}
+}
