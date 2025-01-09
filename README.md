@@ -18,7 +18,7 @@ gcloud dataproc clusters create demo-hive-to-b2 \
 --worker-boot-disk-size 500 \
 --image-version 2.0-debian10 \
 --project applied-ai-practice00 \
---service-account=test-demo@applied-ai-practice00.iam.gserviceaccount.com
+--service-account=simmons-warehouse@applied-ai-practice00.iam.gserviceaccount.com
 
 gcloud compute ssh demo-hive-to-b2-m --project=applied-ai-practice00 --zone=us-central1-f
 sudo su
