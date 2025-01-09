@@ -52,7 +52,7 @@ read -p "Enter the script number: " script_number
 case "$script_number" in
   "1")
     echo "Executing Historic Migration script..........."
-    pyenv exec python Batch-historic-load.py
+    python Batch-historic-load.py
     ;;
   "2")
     echo "Executing Incremental Migration script........"
