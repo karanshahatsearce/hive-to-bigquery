@@ -1,7 +1,5 @@
 # script1.sh
 #!/bin/bash
-export PYENV_VERSION=3.11.0
-export PATH="$HOME/.pyenv/shims:$PATH"
 BUCKET_NAME="demo-gcs-bq"
 
 # Check if the bucket exists
@@ -71,15 +69,15 @@ case "$script_number" in
     case "$number" in 
     "1")
       echo "executing the add column function..........."
-      pyenv exec python main.py --source ADD_COLUMNS
+      python main.py --source ADD_COLUMNS
       ;;
     "2")
       echo "executing the rename column function..........."  
-      pyenv exec python main.py --source RENAME_COLUMN
+      python main.py --source RENAME_COLUMN
       ;;
     "3")
       echo "executing the drop column function........"
-      pyenv exec python main.py --source DROP_COLUMN
+      python main.py --source DROP_COLUMN
       ;;
     *)
     echo "Invalid number entered."
